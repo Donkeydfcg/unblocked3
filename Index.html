@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <style>
+        /* CSS Styles */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        iframe {
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unblocked Games Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#mythfall">Mythfall</a></li>
+                <li><a href="#snake">Snake</a></li>
+                <li><a href="#tetris">Tetris</a></li>
+                <li><a href="#pong">Pong</a></li>
+                <li><a href="#flappybird">Flappy Bird</a></li>
+                <li><a href="#geometrydash">Geometry Dash</a></li>
+                <li><a href="#1v1lol">1v1.LOL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mythfall">
+        <h2>Mythfall: Adventure Game</h2>
+        <button onclick="goFullscreen('mythfallGame')">Go Fullscreen</button>
+        <iframe id="mythfallGame" src="https://mythfall.com/" width="800" height="600" title="Mythfall Game"></iframe>
+    </section>
+
+    <section id="snake">
+        <h2>Snake Game</h2>
+        <button onclick="goFullscreen('snakeGame')">Go Fullscreen</button>
+        <iframe id="snakeGame" src="https://example.com/snake" width="600" height="400" title="Snake Game"></iframe>
+    </section>
+
+    <section id="tetris">
+        <h2>Tetris</h2>
+        <button onclick="goFullscreen('tetrisGame')">Go Fullscreen</button>
+        <iframe id="tetrisGame" src="https://example.com/tetris" width="600" height="400" title="Tetris Game"></iframe>
+    </section>
+
+    <section id="pong">
+        <h2>Pong</h2>
+        <button onclick="goFullscreen('pongGame')">Go Fullscreen</button>
+        <iframe id="pongGame" src="https://example.com/pong" width="600" height="400" title="Pong Game"></iframe>
+    </section>
+
+    <section id="flappybird">
+        <h2>Flappy Bird</h2>
+        <button onclick="goFullscreen('flappybirdGame')">Go Fullscreen</button>
+        <iframe id="flappybirdGame" src="https://flappybird.io/" width="600" height="800" title="Flappy Bird Game"></iframe>
+    </section>
+
+    <section id="geometrydash">
+        <h2>Geometry Dash</h2>
+        <button onclick="goFullscreen('geometryDashGame')">Go Fullscreen</button>
+        <iframe id="geometryDashGame" src="https://geometrydash.io/" width="800" height="600" title="Geometry Dash Game"></iframe>
+    </section>
+
+    <section id="1v1lol">
+        <h2>1v1.LOL</h2>
+        <button onclick="goFullscreen('lolGame')">Go Fullscreen</button>
+        <iframe id="lolGame" src="https://1v1.lol/" width="800" height="600" title="1v1.LOL Game"></iframe>
+    </section>
+
+    <footer>
+        <p>Unblocked Games Hub © 2024</p>
+    </footer>
+
+    <script>
+        // JavaScript to enable fullscreen for the selected iframe
+        function goFullscreen(gameId) {
+            var elem = document.getElementById(gameId);
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { // Firefox
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { // IE/Edge
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
